@@ -6,7 +6,9 @@ Possui esquema de navegação com carregamento em div
 
 Exemplo:
 
-< a href="paginas/home.html" data-div="divConteudo" class="navbar-brand">LOGO< /a>
+<code>
+<a href="paginas/home.html" data-div="divConteudo" class="navbar-brand">LOGO</a>
+</code>
 
 --> Carrega o conteúdo de "paginas/home.html" no "divConteudo"
 
