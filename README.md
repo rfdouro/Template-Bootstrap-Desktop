@@ -6,9 +6,7 @@ Possui esquema de navegação com carregamento em div
 
 Exemplo:
 
-<code>
-<a href="paginas/home.html" data-div="divConteudo" class="navbar-brand">LOGO</a>
-</code>
+< a href="paginas/home.html" data-div="divConteudo" class="navbar-brand">LOGO</a>
 
 --> Carrega o conteúdo de "paginas/home.html" no "divConteudo"
 
@@ -17,4 +15,4 @@ No final da página deve haver a chamada para a função de customização de ta
 
 < script>
  customizaNavigacaoJQuery();
-< /script>
+</script>
