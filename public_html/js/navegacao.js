@@ -62,7 +62,7 @@ function customizaNavegacaoJQuery() {
   } catch (ex) {
    console.log(ex);
   }
-  if (d != null && h != "#!") {
+  if (d != null && h != "#!" && h != "#") {
    $(this).attr("href", "#!");
    $(this).on("click", function (evt) {
     //efetua load no div
