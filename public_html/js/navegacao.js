@@ -20,7 +20,7 @@ function loadInDiv(div, link) {
  * @param {type} element
  * @returns {undefined}
  */
-function configuraNavigacao(element) {
+function configuraNavegacao(element) {
  //tem href e data-div
  if (element.getAttribute("data-div") && element.getAttribute("href")) {
   //pega o valor do atributo do div
@@ -39,12 +39,12 @@ function configuraNavigacao(element) {
  * @param {type} fn
  * @returns {undefined}
  */
-function customizaNavigacao() {
+function customizaNavegacao() {
  //procura todas as ocorrencias de tags no documento
  var tagInstances = document.getElementsByTagName("a");
  //for each occurrence run the associated function
  for (var i = 0; i < tagInstances.length; i++) {
-  configuraNavigacao(tagInstances[i]);
+  configuraNavegacao(tagInstances[i]);
  }
 }
 
@@ -53,7 +53,7 @@ function customizaNavigacao() {
  * usa jquery
  * @returns {undefined}
  */
-function customizaNavigacaoJQuery() {
+function customizaNavegacaoJQuery() {
  $(document).find("a").each(function () {
   var d = null;
   var h = $(this).attr("href");

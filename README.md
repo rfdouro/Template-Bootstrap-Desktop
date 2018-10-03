@@ -14,5 +14,5 @@ Atenção:
 No final da página deve haver a chamada para a função de customização de tags para navegação
 
 < script>
- customizaNavigacaoJQuery();
+ customizaNavegacaoJQuery();
 < /script>
