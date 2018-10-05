@@ -46,13 +46,13 @@ and open the template in the editor.
   <nav class="navbar navbar-default sidebarNavigation" data-sidebarClass="navbar-inverse">
    <div class="container-fluid">
     <div class="navbar-header">
-     <!--button class="navbar-toggle left-navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+     <button class="navbar-toggle left-navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
       <span class="sr-only">Navegação</span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
-     </button-->
-     <span class="navbar-toggle collapsed alert alert-danger">Utilize uma resolução maior</span>
+     </button>
+     <!--span class="navbar-toggle collapsed alert alert-danger">Utilize uma resolução maior</span-->
 
      <a href="paginas/home.html" data-div="divConteudo" class="navbar-brand">LOGO</a>
     </div>
@@ -87,7 +87,7 @@ and open the template in the editor.
       </li>
 
       <li class="dropdown">
-       <a href="#" tabindex="0" data-toggle="dropdown">
+       <a href="#" tabindex="0" data-toggle="dropdown" data-submenu>
         <i class="fa fa-gears"></i>&nbsp;Manutenção<span class="caret"></span>
        </a>
        <ul class="dropdown-menu">
@@ -154,6 +154,10 @@ and open the template in the editor.
 
   <script>
    customizaNavegacaoJQuery();
+   
+   $(document).ready(function () {
+    $('[data-submenu]').submenupicker();
+   });
   </script>
  </body>
 </html>
